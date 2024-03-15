@@ -23,7 +23,7 @@ All pmps can be found at https://github.com/shortxmas/pmp-hub/tree/main/pmps
 
 Make a pull request with your pmp in the ./pmps directory in https://github.com/shortxmas/pmp-hub/pulls.
 
-Name the pmp folder with what your pmp does. For example ``` django-docker-githubactions-awsec2```.
+Name the pmp folder with what your pmp does. For example ```django-docker-githubactions-awsec2```.
 
 For any files in the pipeline thats use sensitive information like credentials, store them with environment variables and create a readme documenting what your pmp does and any environment variables that are neeeded.
 
