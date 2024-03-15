@@ -29,4 +29,4 @@ For any files in the pipeline thats use sensitive information like credentials, 
 
 ## Issues
 
-**pmp-hub is currently in beta testing and may not work fully. Please make issues for any errors encountered at https://github.com/shortxmas/pmp-hub/issues**
+**pmp-hub is currently in its early stages and may not work fully. Please make issues for any errors encountered at https://github.com/shortxmas/pmp-hub/issues**
