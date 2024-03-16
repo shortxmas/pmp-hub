@@ -4,11 +4,11 @@ on:
     branches:
       - main
     paths:
-      - "cli/*"
+      - "cli/**"
   pull_request:
     branches: -main
     paths:
-      - "cli/*"
+      - "cli/**"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,9 +18,7 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
-      - run: cd cli
-      - run : npm install
       - run: npm ci
-      - run: npm publish
+      - run: npm publish ./cli
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
