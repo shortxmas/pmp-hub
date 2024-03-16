@@ -1,0 +1,12 @@
+{
+  "name": "express-vercel",
+  "version": "1.0.0",
+  "description": "1. [Contents](#contents)\r 2. [Evironment Variables](#evironment-variables)\r 3. [How to Use](#how-to-use)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
