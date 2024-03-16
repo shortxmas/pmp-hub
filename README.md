@@ -1,5 +1,7 @@
 # pmp-hub
 
+**pmp-hub streamlines the development process with pre-made development to production pipelines**
+
 1. [Installation](#installation)
 2. [Commands](#commands)
 3. [Contributing a pmp](#contributing-a-pmp)
