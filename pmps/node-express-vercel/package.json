@@ -1,12 +1,17 @@
 {
   "name": "express-vercel",
   "version": "1.0.0",
-  "description": "1. [Contents](#contents)\r 2. [Evironment Variables](#evironment-variables)\r 3. [How to Use](#how-to-use)",
+  "description": "Node/Express starter app pmp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon index"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0"
+  }
 }
