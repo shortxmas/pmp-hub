@@ -79,7 +79,7 @@ const selectPmp = async () => {
 function cloneGithubSubdirectory(repoUrl, subdirectory) {
   try {
     shell.exec(`git clone --depth 1 ${repoUrl} temp_dir`);
-    shell.cp("-R", `temp_dir/pmps/${subdirectory}/*`, ".");
+    shell.cp("-R", `temp_dir/pmps/${subdirectory}`, ".");
     console.log(`Successfully cloned ${subdirectory} from ${repoUrl}`);
   } catch (error) {
     console.error("Error:", error.message);
