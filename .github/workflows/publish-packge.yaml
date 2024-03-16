@@ -19,7 +19,10 @@ jobs:
         with:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
-      - run: npm ci
+      - name: Install Dependencies
+        run: |
+          cd cli # Navigate into the cli directory
+          npm install
       - run: npm publish ./cli # Adjusted to publish the package located in the cli directory
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
