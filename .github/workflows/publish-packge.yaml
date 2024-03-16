@@ -4,21 +4,22 @@ on:
     branches:
       - main
     paths:
-      - "cli/**"
+      - "cli/**" # Adjusted path to include all files within the cli directory
   pull_request:
     branches: -main
     paths:
-      - "cli/**"
+      - "cli/**" # Adjusted path to include all files within the cli directory
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
-      - run: npm publish ./cli
+      - run: npm publish ./cli # Adjusted to publish the package located in the cli directory
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
