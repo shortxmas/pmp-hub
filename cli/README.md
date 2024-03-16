@@ -34,4 +34,4 @@ For any files in the pipeline thats use sensitive information like credentials, 
 
 ## Issues
 
-**This package is in its early stages and may not fully work. Please make issues for any errors encountered at https://github.com/shortxmas/pmp-hub-cli/issues**
+**This package is currently in its early stages and may not fully work. Please make issues for any errors encountered at https://github.com/shortxmas/pmp-hub-cli/issues**
