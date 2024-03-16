@@ -32,6 +32,35 @@ Name the pmp folder with what your pmp does. For example ``` django-docker-githu
 
 For any files in the pipeline thats use sensitive information like credentials, store them with environment variables and create a readme documenting what your pmp does and any environment variables that are neeeded.
 
+For the pmp read me, please use the following format.
+```
+# GitHub Actions Push Docker Image to AWS ECR
+
+1. [Contents](#contents)
+2. [Secrects/Variables Used](#secrectsvariables-used)
+3. [How to Use](#how-to-use)
+
+## Contents
+
+What does this pmp do and what does it contain.
+
+## Secrects/Variables Used
+
+**In GitHub repository actions secrets:**
+- REPOSITORY_SECRET1
+- REPOSITORY_SECRET2
+
+**Environment Variables**
+- ENVIRONMENT_VARIABLE1
+- ENVIRONMENT_VARIABLE2
+
+## How to Use
+
+1. Step 1
+2. Step 2
+3. Step 3....
+```
+
 ## Issues
 
 **This package is currently in its early stages and may not fully work. Please make issues for any errors encountered at https://github.com/shortxmas/pmp-hub-cli/issues**
