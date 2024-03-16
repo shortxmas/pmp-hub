@@ -1,6 +1,6 @@
 {
   "name": "pmp-hub",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "pmp-hub CLI",
   "main": "index.js",
   "scripts": {
