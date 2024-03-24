@@ -21,10 +21,12 @@ This pmp contains a starter TypeScript React project with Webpack along with a G
 1. Run ```npm install```
 2. Start development mode and create a development build with ```npm run dev```
 3. To run a production build, run ```npm run build```
-4. Builds will compile React code into dist folder where HTML files are also held
-5. All components and pages for development are in src folder
-6. Webpack configuration files are in webpack folder
-7. Actions to push to SFTP server will occur on push or pull request into main branch
+
+- Builds will compile React code into dist folder where HTML files are also held
+- All components and pages for development are in src folder
+- Webpack configuration files are in webpack folder
+- Actions to push to SFTP server will occur on push or pull request into main branch
+- When referencing images sources, remember that the compiled React code is in the ./dist directory so in development, use ./assets/(image name) 
 
 
 
