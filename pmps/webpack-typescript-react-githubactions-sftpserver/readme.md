@@ -25,8 +25,8 @@ This pmp contains a starter TypeScript React project with Webpack along with a G
 - Builds will compile React code into dist folder where HTML files are also held
 - All components and pages for development are in src folder
 - Webpack configuration files are in webpack folder
-- Actions to push to SFTP server will occur on push or pull request into main branch
 - When referencing images sources, remember to reference them as if you were to in the HTML file directory, not the development src directory
-
+- Actions to push to SFTP server will occur on push or pull request into main branch
+- The project directory is what will be pushed to the SFTP server
 
 

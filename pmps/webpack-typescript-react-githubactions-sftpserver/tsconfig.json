@@ -3,7 +3,7 @@
       "jsx": "react",
       "module": "commonjs",
       "noImplicitAny": true,
-      "outDir": "./dist/",
+      "outDir": "project",
       "preserveConstEnums": true,
       "removeComments": true,
       "sourceMap": true,
