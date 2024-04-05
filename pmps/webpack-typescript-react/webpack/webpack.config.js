@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const Dotenv = require('dotenv-webpack');
 
 function getEntryPoints(directory) {
   const entries = {};
@@ -46,4 +47,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new Dotenv(),
+  ],
 };
