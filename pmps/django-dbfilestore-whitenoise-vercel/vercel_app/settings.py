@@ -10,6 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,7 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main_app',
-    'db_file_storage'
+    'db_file_storage',
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +148,23 @@ STATICFILES_DIR = [
   BASE_DIR / 'static',
   BASE_DIR / 'static/icon',
 ] 
+
+try:
+    from .local_settings import * 
+    print('Local settings imported')
+except ImportError:
+    print('Local settings were not imported')
+    
+    REST_FRAMEWORK = {
+        'DEFAULT_RENDERER_CLASSES': (
+            'rest_framework.renderers.JSONRenderer',
+        ),
+        'DEFAULT_AUTHENTICATION_CLASSES': [
+            'rest_framework.authentication.BasicAuthentication',
+        ],
+        'DEFAULT_PERMISSION_CLASSES': [
+            'rest_framework.permissions.IsAuthenticated',
+        ]
+    }
+    
+CORS_ORIGIN_ALLOW_ALL = True
