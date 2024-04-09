@@ -15,3 +15,5 @@ This pmp contains a start Django project with Whitenoise, db-file-store(https://
 4. Run ```python manage.py runserver``` or ```python3 manage.py runserver``` to start the app locally
 5. Deploy the app on Vercel by deploying the repository
 
+- Environment variables can be defined in a .env file in vercel_app and used in settings.py with os.getenv('ENV KEY')
+
