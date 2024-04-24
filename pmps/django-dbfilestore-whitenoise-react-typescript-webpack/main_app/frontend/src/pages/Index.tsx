@@ -1,5 +1,6 @@
 import * as React from "react";
 import ExampleComponent from "../components/ExampleComponent";
+import { createRoot } from "react-dom/client";
 
 const Index = () => {
   return (
